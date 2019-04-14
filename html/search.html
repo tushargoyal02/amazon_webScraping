@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hadoop</title>
+	</head>	
+	<style>	
+		*{
+			margin :0px;
+			padding :0px;
+		}
+		body{
+			background-image:url("back.jpg");
+			font-family: san-serif;
+			background-size:1920px 1080px;
+		}
+		.wrapper{
+			padding : 100px;
+			height: 100%;
+			z-index: 0;
+		}
+		.main{
+			background-color: white;
+			padding: 50px;
+			height: auto;
+			opacity: 1;
+			margin-top:100px;
+			opacity: .7;
+		}
+		.main form{
+			margin-left: 150px;
+			margin-top: 100px;
+		}
+		#search{
+			font-size:50px;
+			margin-left: 100px;
+			
+		}
+		#search-bar{
+			padding:20px 200px;
+			font-size: 20px;
+			margin-bottom: 50px;
+			margin: 0px;
+		}
+		#button{
+			padding: 15px 40px;
+			margin-left: 300px;
+			font-size: 30px;	
+		}
+		#magnifier{
+			width:70px; 
+			height: 70px;
+			margin:0px;
+			position: relative;
+			top: 27px;
+			border-top: 1px #8e8e8e solid;
+			border-bottom: 1px #8e8e8e solid;
+			border-right: 1px #8e8e8e solid;
+			border-radius:4px;
+		}
+		
+	</style>
+	<body>
+		<div class="wrapper">
+			<div class="main">
+				<form action="http://192.168.43.40/cgi-bin/product_url.py" method="post">
+					<span id="search">
+						Amazon Review Analysis<br><br>
+					</span>
+						<input type="text" id="search-bar" name="search" placeholder="Enter your search keyword here"><img id="magnifier" src="search.png"><br><br><br>
+						<input id="button" type="Submit" value="Search">
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
+43
