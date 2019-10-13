@@ -32,6 +32,14 @@ req = requests.get(url).text
 
 soup = BeautifulSoup(req,"lxml")
 
+# it will work to remove some expection
+try:
+	a=10
+	b=0
+	c=a/b
+	print(c)
+except Exception:
+	print("Cant divide by zero")
 
 for img_div in soup.find_all("div",{"class":"s-item-container"}):
 	for img_div2 in img_div.find_all("div",{"class":"a-fixed-left-grid"}):
